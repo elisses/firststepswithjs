@@ -1,3 +1,4 @@
+//variables
 var name = 'bruno'
 var age = 25
 var weight = 85.2
