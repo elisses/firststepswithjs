@@ -1,22 +1,11 @@
-//declaring array and object
+//Arithmetic operators
+var weight = 105
+var height = 1.69
 
-var names = [
-	'joão',
-	'maria',
-	'pedro'
-]
+var imc = weight / (height * height)
 
-console.log(names[1])
+imc += 10 // -= ; ++ ; --
 
-var person = {
-	name: 'Bruno',
-	friends: [
-	'joão',
-	'maria',
-	'pedro'
-]
 
-}
+console.log(imc)
 
- console.log(person.name)
- console.log(person.friends)
