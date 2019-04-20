@@ -1,22 +1,36 @@
-//conditional structures
-var buySoda = false
+//work with "For"
+
+var convictions = [
+	{
+		name: 'Pedro',
+		age: '20',
+		drinkBeer: true,
+		drinkSoda: false
+	},
+	{
+		name: 'Maria',
+		age: '17',
+		drinkBeer: false,
+		drinkSoda: true
+	},
+	{
+		name: 'João',
+		age: '19',
+		drinkBeer: true,
+		drinkSoda: true
+	}
+]
+
 var buyBeer = false
-var buyNaturalJuice = false
 
-var conviction = {
-	nome: 'pedro',
-	age: '18',
-	drinkBeer: true,
-	drinkSoda: false
+console.log(convictions.length)
+
+for (var i = 0; i < convictions.length; i++) {
+	console.log(convictions[i].name,convictions[i].drinkBeer)
+	if(convictions[i].drinkBeer){
+		buyBeer = true
+		break
+	}
 }
 
-if (conviction.drinkSoda) {
-	buySoda = true
-
-} else if (conviction.drinkBeer && conviction.age >= 18) {
-	buyBeer = true
-} else {
-	buyNaturalJuice = true
-}
-
-console.log(buySoda)
+console.log(buyBeer)
