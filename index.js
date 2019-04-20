@@ -1,11 +1,22 @@
-//Arithmetic operators
-var weight = 105
-var height = 1.69
+//conditional structures
+var buySoda = false
+var buyBeer = false
+var buyNaturalJuice = false
 
-var imc = weight / (height * height)
+var conviction = {
+	nome: 'pedro',
+	age: '18',
+	drinkBeer: true,
+	drinkSoda: false
+}
 
-imc += 10 // -= ; ++ ; --
+if (conviction.drinkSoda) {
+	buySoda = true
 
+} else if (conviction.drinkBeer && conviction.age >= 18) {
+	buyBeer = true
+} else {
+	buyNaturalJuice = true
+}
 
-console.log(imc)
-
+console.log(buySoda)
