@@ -1,4 +1,4 @@
-//work with "For"
+//work with while
 
 var convictions = [
 	{
@@ -25,12 +25,15 @@ var buyBeer = false
 
 console.log(convictions.length)
 
-for (var i = 0; i < convictions.length; i++) {
+var i = 0
+
+while ( i < convictions.length) {
 	console.log(convictions[i].name,convictions[i].drinkBeer)
 	if(convictions[i].drinkBeer){
 		buyBeer = true
 		break
 	}
+	i++
 }
 
 console.log(buyBeer)
